@@ -1,0 +1,21 @@
+src\WSS.obj: ../src/WSS.c
+src\WSS.obj: C:/Users/Mobis\\ Alabama/Desktop/WSS/WSS/inc/WSS.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_stdint40.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/sys/stdint.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/sys/cdefs.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/sys/_types.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/machine/_types.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/machine/_stdint.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/sys/_stdint.h
+src\WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h
+src\WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_types.h
+src\WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_memmap.h
+src\WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_gpio.h
+src\WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_timer.h
+src\WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/interrupt.h
+src\WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/gpio.h
+src\WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/sysctl.h
+src\WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/timer.h

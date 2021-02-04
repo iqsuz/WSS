@@ -1,0 +1,9 @@
+#include "WSS.h"
+
+void initWSS(){
+    //Init interrupt for button
+
+    //Init interrupt for signal
+    //Init timer
+
+}

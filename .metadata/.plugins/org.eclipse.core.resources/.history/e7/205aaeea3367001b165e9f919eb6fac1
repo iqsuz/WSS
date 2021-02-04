@@ -1,0 +1,7 @@
+#include "./in/WSS.h"
+
+int main(void)
+{
+	initWSS();
+	return 0;
+}

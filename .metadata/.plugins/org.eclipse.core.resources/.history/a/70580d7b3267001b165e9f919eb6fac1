@@ -1,0 +1,16 @@
+#include "WSS.h"
+
+void initWSS(){
+	//Initialize LED;
+	initLEDs();
+    //Init interrupt for button
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+    //Init interrupt for signal
+    //Init timer
+}
+
+static initLEDs(){
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+
+
+}
