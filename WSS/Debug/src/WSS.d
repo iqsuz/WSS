@@ -1,7 +1,7 @@
 # FIXED
 
 src/WSS.obj: ../src/WSS.c
-src/WSS.obj: C:/Users/mehme/Desktop/WSS/WSS/WSS/inc/WSS.h
+src/WSS.obj: C:/Users/Mobis\ Alabama/Desktop/WSS/WSS/inc/WSS.h
 src/WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h
 src/WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h
 src/WSS.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h
@@ -23,7 +23,7 @@ src/WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/sysctl.h
 src/WSS.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/timer.h
 
 ../src/WSS.c: 
-C:/Users/mehme/Desktop/WSS/WSS/WSS/inc/WSS.h: 
+C:/Users/Mobis\ Alabama/Desktop/WSS/WSS/inc/WSS.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h: 

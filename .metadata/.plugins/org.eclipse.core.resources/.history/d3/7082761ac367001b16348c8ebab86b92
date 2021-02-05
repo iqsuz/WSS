@@ -1,0 +1,8 @@
+#include "inc/WSS.h"
+
+int main(void)
+{
+	structController WSSController;
+	initWSS();
+	return 0;
+}

@@ -1,3 +1,12 @@
+/**************START BUTTON CONFIGS**************/
+//Start button should be connected to PORT F Pin 4.
+//Enumeration is defined in case of change in the future. Please refer INT_DEF enumeration in this header file.
+
+/**************EXTERNAL INTERRUPT FOR SENSOR SIGNAL CONFIGS**************/
+//External interrupt port and pin for signal has not been assigned yet.
+//These comment lines needs to be updated based on configuration in INT_DEF enumeration.
+
+
 #ifndef INC_WSS_H_
 #define INC_WSS_H_
 
@@ -14,21 +23,30 @@
 #include "driverlib/sysctl.h"
 #include "driverlib/timer.h"
 
-enum LED_DEF{
+typedef enum{
 	RED_LED = GPIO_PIN_1,
 	BLUE_LED = GPIO_PIN_2,
 	GREEN_LED = GPIO_PIN_3
-};
+}LED_DEF;
 
-enum INT_DEF{
+enum{
 	START_BUTTON_PORT = GPIO_PORTF_BASE,
 	START_BUTTON_PIN = GPIO_PIN_4,
 	SENSOR_PORT,		//Needs to be decided.
 	SENSOR_PIN			//Needs to be decided.
-};
+}INT_DEF;
+
+typedef struct{
+	bool isButton;
+}structController;
+
+
+extern structController WSSController;
 
 
 void initWSS(void);
 static void initLEDs(uint8_t);
+static void initButtonInterrupt(void);
+void buttonInterruptHandler(void);
 
 #endif /* INC_WSS_H_ */

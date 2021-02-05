@@ -1,0 +1,10 @@
+#include "inc/WSS.h"
+
+structController WSSController = {.isButton = false};
+
+int main(void)
+{
+
+	initWSS();
+	return 0;
+}

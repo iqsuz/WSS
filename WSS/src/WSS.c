@@ -2,20 +2,47 @@
 
 void initWSS(){
 	initLEDs(RED_LED | BLUE_LED | GREEN_LED); //LEDs are being initialed.
+	initButtonInterrupt(START_BUTTON_PORT, START_BUTTON_PIN);		//Button interrupt was initialed.
 
-	//Init interrupt for button
+
     //Init interrupt for signal
     //Init timer
 }
 
+//Initialization of LEDs.
 static void initLEDs(uint8_t pins){
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
 	GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, pins);
 	GPIOPinWrite(GPIO_PORTF_BASE, RED_LED | BLUE_LED | GREEN_LED ,0x08);
 }
 
-static void initButtonInterrupt(){
+//Initialization of Start Button Interrupt
+static void initButtonInterrupt(uint32_t port, uint8_t pin){
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
-	GPIOPinTypeGPIOInput(START_BUTTON_PORT, START_BUTTON_PIN);
+	SysCtlDelay(3);
 
+	GPIOPinTypeGPIOInput(port, pin);
+	GPIOPadConfigSet(port, pin,GPIO_STRENGTH_2MA,GPIO_PIN_TYPE_STD_WPU);
+	GPIOIntTypeSet(port, pin, GPIO_FALLING_EDGE);
+	GPIOIntRegister(port, buttonInterruptHandler);
+	GPIOIntEnable(port, pin);
+}
+
+static void initSignalInterrupt(){
+
+}
+
+void buttonInterruptHandler(){
+	uint32_t intStatus;
+
+	intStatus = GPIOIntStatus(START_BUTTON_PORT, true);
+
+
+
+
+
+
+
+	WSSController.isButton = true;
+	GPIOIntClean(START_BUTTON_PORT, START_BUTTON_PIN);
 }
