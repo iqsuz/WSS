@@ -1,17 +1,17 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.2                     
 ******************************************************************************
->> Linked Thu Feb  4 22:18:07 2021
+>> Linked Thu Feb  4 22:32:04 2021
 
 OUTPUT FILE NAME:   <WSS.out>
-ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 0000046d
+ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 00000469
 
 
 MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00040000  000004d6  0003fb2a  R  X
+  FLASH                 00000000   00040000  000004d2  0003fb2e  R  X
   SRAM                  20000000   00008000  00000200  00007e00  RW X
 
 
@@ -19,9 +19,9 @@ SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    000004d6   000004d6    r-x
+00000000    00000000    000004d2   000004d2    r-x
   00000000    00000000    0000026c   0000026c    r-- .intvecs
-  0000026c    0000026c    0000026a   0000026a    r-x .text
+  0000026c    0000026c    00000266   00000266    r-x .text
 20000000    20000000    00000200   00000000    rw-
   20000000    20000000    00000200   00000000    rw- .stack
 
@@ -34,18 +34,18 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    0000026c     
                   00000000    0000026c     tm4c123gh6pm_startup_ccs.obj (.intvecs)
 
-.text      0    0000026c    0000026a     
+.text      0    0000026c    00000266     
                   0000026c    0000016c     driverlib.lib : gpio.obj (.text:GPIOPadConfigSet)
                   000003d8    00000034                   : sysctl.obj (.text:SysCtlPeripheralEnable)
-                  0000040c    00000034     WSS.obj (.text)
-                  00000440    0000002c     driverlib.lib : gpio.obj (.text:GPIODirModeSet)
-                  0000046c    0000002c     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.text:_c_int00_noinit_noargs:_c_int00_noinit_noargs)
-                  00000498    0000001a     driverlib.lib : gpio.obj (.text:GPIOPinTypeGPIOOutput)
-                  000004b2    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
-                  000004be    0000000a     main.obj (.text)
-                  000004c8    00000006     driverlib.lib : gpio.obj (.text:GPIOPinWrite)
-                  000004ce    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
-                  000004d2    00000004                                   : exit.c.obj (.text:abort:abort)
+                  0000040c    00000030     WSS.obj (.text)
+                  0000043c    0000002c     driverlib.lib : gpio.obj (.text:GPIODirModeSet)
+                  00000468    0000002c     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.text:_c_int00_noinit_noargs:_c_int00_noinit_noargs)
+                  00000494    0000001a     driverlib.lib : gpio.obj (.text:GPIOPinTypeGPIOOutput)
+                  000004ae    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
+                  000004ba    0000000a     main.obj (.text)
+                  000004c4    00000006     driverlib.lib : gpio.obj (.text:GPIOPinWrite)
+                  000004ca    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  000004ce    00000004                                   : exit.c.obj (.text:abort:abort)
 
 .cinit     0    00000000    00000000     UNINITIALIZED
 
@@ -69,10 +69,10 @@ MODULE SUMMARY
        Total:                         12     620       0      
                                                               
     .\src\
-       WSS.obj                        52     0         0      
+       WSS.obj                        48     0         0      
        main.obj                       10     0         0      
     +--+------------------------------+------+---------+---------+
-       Total:                         62     0         0      
+       Total:                         58     0         0      
                                                               
     C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib
        gpio.obj                       440    0         0      
@@ -89,19 +89,19 @@ MODULE SUMMARY
                                                               
        Stack:                         0      0         512    
     +--+------------------------------+------+---------+---------+
-       Grand Total:                   618    620       512    
+       Grand Total:                   614    620       512    
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
 
 address   name                   
 -------   ----                   
-000004d3  C$$EXIT                
-00000441  GPIODirModeSet         
+000004cf  C$$EXIT                
+0000043d  GPIODirModeSet         
 0000026d  GPIOPadConfigSet       
-00000499  GPIOPinTypeGPIOOutput  
-000004c9  GPIOPinWrite           
-000004b3  ResetISR               
+00000495  GPIOPinTypeGPIOOutput  
+000004c5  GPIOPinWrite           
+000004af  ResetISR               
 000003d9  SysCtlPeripheralEnable 
 20000200  __STACK_END            
 00000200  __STACK_SIZE           
@@ -116,13 +116,13 @@ UNDEFED   __mpu_init
 20000000  __stack                
 20000000  __start___llvm_prf_cnts
 20000000  __stop___llvm_prf_cnts 
-0000046d  _c_int00_noinit_noargs 
-000004cf  _system_pre_init       
-000004d3  abort                  
+00000469  _c_int00_noinit_noargs 
+000004cb  _system_pre_init       
+000004cf  abort                  
 ffffffff  binit                  
 00000000  g_pfnVectors           
-0000040d  initWSS                
-000004bf  main                   
+0000042d  initWSS                
+000004bb  main                   
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -134,16 +134,16 @@ address   name
 00000200  __STACK_SIZE           
 0000026d  GPIOPadConfigSet       
 000003d9  SysCtlPeripheralEnable 
-0000040d  initWSS                
-00000441  GPIODirModeSet         
-0000046d  _c_int00_noinit_noargs 
-00000499  GPIOPinTypeGPIOOutput  
-000004b3  ResetISR               
-000004bf  main                   
-000004c9  GPIOPinWrite           
-000004cf  _system_pre_init       
-000004d3  C$$EXIT                
-000004d3  abort                  
+0000042d  initWSS                
+0000043d  GPIODirModeSet         
+00000469  _c_int00_noinit_noargs 
+00000495  GPIOPinTypeGPIOOutput  
+000004af  ResetISR               
+000004bb  main                   
+000004c5  GPIOPinWrite           
+000004cb  _system_pre_init       
+000004cf  C$$EXIT                
+000004cf  abort                  
 20000000  __stack                
 20000000  __start___llvm_prf_cnts
 20000000  __stop___llvm_prf_cnts 

@@ -20,6 +20,13 @@ enum LED_DEF{
 	GREEN_LED = GPIO_PIN_3
 };
 
+enum INT_DEF{
+	START_BUTTON_PORT = GPIO_PORTF_BASE,
+	START_BUTTON_PIN = GPIO_PIN_4,
+	SENSOR_PORT,		//Needs to be decided.
+	SENSOR_PIN			//Needs to be decided.
+};
+
 
 void initWSS(void);
 static void initLEDs(uint8_t);
