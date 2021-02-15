@@ -13,14 +13,22 @@ src/main.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/mac
 src/main.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/machine/_stdint.h
 src/main.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/sys/_stdint.h
 src/main.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h
+src/main.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/string.h
 src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_types.h
 src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_memmap.h
 src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_gpio.h
 src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_timer.h
+src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_ints.h
+src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_adc.h
+src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/pin_map.h
 src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/interrupt.h
 src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/gpio.h
 src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/sysctl.h
 src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/timer.h
+src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/uart.h
+src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/adc.h
+src/main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/utils/uartstdio.h
+src/main.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdarg.h
 
 ../src/main.c: 
 C:/Users/mehme/Desktop/WSS/WSS/WSS/inc/WSS.h: 
@@ -35,11 +43,19 @@ C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/machine/_types.h:
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/machine/_stdint.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/sys/_stdint.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h: 
+C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/string.h: 
 C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_types.h: 
 C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_memmap.h: 
 C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_gpio.h: 
 C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_timer.h: 
+C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_ints.h: 
+C:/ti/TivaWare_C_Series-2.2.0.295/inc/hw_adc.h: 
+C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/pin_map.h: 
 C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/interrupt.h: 
 C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/gpio.h: 
 C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/sysctl.h: 
 C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/timer.h: 
+C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/uart.h: 
+C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/adc.h: 
+C:/ti/TivaWare_C_Series-2.2.0.295/utils/uartstdio.h: 
+C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdarg.h: 

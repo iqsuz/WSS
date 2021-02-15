@@ -13,6 +13,7 @@ ORDERED_OBJS += \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "./src/WSS.obj" \
 "./src/main.obj" \
+"./src/uartstdio.obj" \
 "../tm4c123gh6pm.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
@@ -159,8 +160,8 @@ WSS.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "tm4c123gh6pm_startup_ccs.obj" "src\WSS.obj" "src\main.obj" 
-	-$(RM) "tm4c123gh6pm_startup_ccs.d" "src\WSS.d" "src\main.d" 
+	-$(RM) "tm4c123gh6pm_startup_ccs.obj" "src\WSS.obj" "src\main.obj" "src\uartstdio.obj" 
+	-$(RM) "tm4c123gh6pm_startup_ccs.d" "src\WSS.d" "src\main.d" "src\uartstdio.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

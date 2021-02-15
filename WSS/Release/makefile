@@ -13,6 +13,7 @@ ORDERED_OBJS += \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "./src/WSS.obj" \
 "./src/main.obj" \
+"./src/uartstdio.obj" \
 "../tm4c123gh6pm.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
@@ -145,7 +146,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 WSS.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"WSS.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="WSS_linkInfo.xml" --rom_model -o "WSS.out" $(ORDERED_OBJS)
+	"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"WSS.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/TivaWare_C_Series-2.2.0.295/utils" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="WSS_linkInfo.xml" --rom_model -o "WSS.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
@@ -159,8 +160,8 @@ WSS.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "tm4c123gh6pm_startup_ccs.obj" "src\WSS.obj" "src\main.obj" 
-	-$(RM) "tm4c123gh6pm_startup_ccs.d" "src\WSS.d" "src\main.d" 
+	-$(RM) "tm4c123gh6pm_startup_ccs.obj" "src\WSS.obj" "src\main.obj" "src\uartstdio.obj" 
+	-$(RM) "tm4c123gh6pm_startup_ccs.d" "src\WSS.d" "src\main.d" "src\uartstdio.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
